@@ -28,7 +28,7 @@ Specifications:
 3. Translate the nucleotide triplets into codons for six possible reading frames.
 4. Highlight 'MET' codons.
 
-### Links:
+#### Links:
 [Codons Overview.](https://en.wikipedia.org/wiki/DNA_codon_table)  
 [Reading frame Overview.](https://en.wikipedia.org/wiki/Open_reading_frame)  
 [Basically I'm making this.](https://web.expasy.org/translate/)  
