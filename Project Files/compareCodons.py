@@ -32,7 +32,7 @@ def readSamples(codonsList):
         cut = codonsList[i:i+3]
         highlighter = bcolors.blue + cut + bcolors.ENDC
         newcodonslist = codonsList.replace(cut, highlighter)
-    print newcodonslist
+    print(newcodonslist)
 
 # object sequence is passed to compare (by assignment), from classMaker() in main.py
 # object codonsList is passed to method readSamples above, by assignment
@@ -40,13 +40,13 @@ def readSamples(codonsList):
 # https://medium.com/@meghamohan/mutable-and-immutable-side-of-python-c2145cf72747
 # https://medium.com/school-of-code/passing-by-assignment-in-python-7c829a2df10a
 def compare(sequence):
-      newList = []
-      x = 0
-      y = len(sequence)
-      for i in range(0,y):
-            #The 'items() method' returns a list of tuple pairs: https://www.tutorialspoint.com/python/dictionary_items.htm
-            for key, value in codons.items(): 
-                  if sequence[i] in value:
-                        newList.append(key)
-      codonsList = "".join(newList)
-      readSamples(codonsList)
+    newList = []
+    x = 0
+    y = len(sequence)
+    for i in range(0,y):
+        #The 'items() method' returns a list of tuple pairs: https://www.tutorialspoint.com/python/dictionary_items.htm
+        for key, value in codons.items(): 
+                if sequence[i] in value:
+                    newList.append(key)
+    codonsList = "".join(newList)
+    readSamples(codonsList)
